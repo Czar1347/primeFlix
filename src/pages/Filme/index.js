@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import './filme.css';
+import { useParams, useNavigate } from "react-router-dom";
+import "./filme.css";
 
 import api from "../../services/api";
 
 function Filme() {
   const { id } = useParams();
-  const [ filme, setFilme] = useState({});
-  const [ loading, setLoading ] = useState(true);
+  const navigate = useNavigate();
+
+  const [filme, setFilme] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadFilme() {
-      await api.get(`/movie/${id}`, {
+      await api
+        .get(`/movie/${id}`, {
           params: {
             api_key: "b7c397b7ac9d3e5014089c2e9458f2b6",
             language: "pt-BR",
@@ -19,11 +22,13 @@ function Filme() {
         })
         .then((response) => {
           setFilme(response.data);
-          console.log(setFilme(response.data))
+          console.log(setFilme(response.data));
           setLoading(false);
         })
         .catch(() => {
-          console.log("FILME NÃO ENCONTRADO")
+          console.log("FILME NÃO ENCONTRADO");
+          navigate('/',{replace: true});
+          return;
         });
     }
     loadFilme();
@@ -32,8 +37,6 @@ function Filme() {
       console.log("Componente foi desmontado");
     };
   }, []);
-
-  
 
   if (loading) {
     return (
@@ -58,12 +61,9 @@ function Filme() {
       <div className="area-buttons">
         <button>Salvar</button>
         <button>
-          <a href="#">
-            Trailer
-          </a>
+          <a forget='blank' rel='external' href={`https://youtube.com/results?search_query=${filme.title} Trailer`}>Trailer</a>
         </button>
       </div>
-
     </div>
   );
 }
