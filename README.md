@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PrimeFlix - Uma aplicação de filmes
 
-## Available Scripts
+## Descrição
 
-In the project directory, you can run:
+PrimeFlix é uma aplicação web que permite aos usuários explorar e salvar seus filmes favoritos. Os usuários podem visualizar detalhes dos filmes, assistir aos trailers e salvar filmes em uma lista de favoritos para acessá-los posteriormente.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **React Router**: Biblioteca para controle de rotas na aplicação.
+- **Axios**: Cliente HTTP para fazer requisições à API de filmes.
+- **react-toastify**: Componente para exibir notificações na aplicação.
+- **HTML**: Linguagem de marcação para estruturação do conteúdo da aplicação.
+- **CSS**: Linguagem de estilo para estilização dos componentes.
+- **localStorage**: Armazenamento local do navegador para salvar filmes favoritos do usuário.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+1. Clone o repositório do GitHub para sua máquina local:
+   ```
+   git clone https://github.com/seu-usuario/primeflix.git
+   ```
+   
+2. Acesse o diretório do projeto:
+   ```
+   cd primeflix
+   ```
+   
+3. Instale as dependências do projeto utilizando npm:
+   ```
+   npm install
+   ```
+   
+   Certifique-se de adicionar as dependências necessárias utilizando o seguinte comando:
+   ```bash
+   npm install axios react-router-dom react-toastify
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Uso
 
-### `npm run build`
+1. Inicie a aplicação em ambiente de desenvolvimento:
+   ```
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Acesse a aplicação em seu navegador web utilizando o seguinte endereço:
+   ```
+   http://localhost:3000
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Funcionalidades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Explorar filmes em exibição**: Na página inicial, o usuário pode visualizar uma lista de filmes em exibição.
+- **Detalhes do filme**: Ao clicar em um filme, o usuário é direcionado para uma página com os detalhes do filme, incluindo sinopse, avaliação e opção para assistir ao trailer.
+- **Salvar filmes favoritos**: O usuário pode salvar filmes em uma lista de favoritos clicando no botão "Salvar" na página de detalhes do filme.
+- **Visualizar filmes favoritos**: Na página "Meus Filmes", o usuário pode visualizar todos os filmes salvos em sua lista de favoritos.
+- **Excluir filmes favoritos**: O usuário pode remover filmes da lista de favoritos clicando no botão "Excluir" na página "Meus Filmes".
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Prints da Aplicação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Print da Página Inicial](./README/home.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Print da Página de Detalhes do Filme](./README/filme.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Print da Página de Detalhes do Filme ao Salvar nos Meus Favoritos(Notificação)](./README/filme-notification.png)
 
-## Learn More
+![Print da Página do Meus Favoritos](./README/favoritos.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Print da Página do Meus Favoritos(sem filme favoritado)](./README/favoritos-none.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Print da Página de Erro](./README/erro.png)
 
-### Code Splitting
+## Acesso Online
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A aplicação está disponível online através do seguinte link: [PrimeFlix](https://prime-flix-topaz.vercel.app/)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
