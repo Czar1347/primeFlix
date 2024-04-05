@@ -59,17 +59,17 @@ PrimeFlix é uma aplicação web que permite aos usuários explorar e salvar seu
 
 
 ## Prints da Aplicação
-
+- **Print da Página Inicial**
 ![Print da Página Inicial](./README/home.png)
-
+- **Print da Página de Detalhes do Filme**
 ![Print da Página de Detalhes do Filme](./README/filme.png)
-
+- **Print da Página de Detalhes do Filme ao Salvar nos Meus Favoritos(Notificação)**
 ![Print da Página de Detalhes do Filme ao Salvar nos Meus Favoritos(Notificação)](./README/filme-notification.png)
-
+- **Print da Página do Meus Favoritos**
 ![Print da Página do Meus Favoritos](./README/favoritos.png)
-
+- **Print da Página do Meus Favoritos(sem filme favoritado)**
 ![Print da Página do Meus Favoritos(sem filme favoritado)](./README/favoritos-none.png)
-
+- **Print da Página de Erro**
 ![Print da Página de Erro](./README/erro.png)
 
 ## Acesso Online
